@@ -14,7 +14,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 to view the Hello World page.
+Open http://localhost:3000 to view the resume views.
 
 ## Run tests
 
@@ -38,11 +38,15 @@ npm run lint
 │   └── app
 │       ├── page.test.tsx
 │       └── page.tsx
+│   └── components
+│       ├── ResumeApp.tsx
+│       └── ...
 └── ...
 ```
 
 ## Features and changes
 
-- Hello World page at `src/app/page.tsx`.
+- SPA-style resume views with menu navigation in `src/components/ResumeApp.tsx`.
+- Shared UI components in `src/components`.
 - Jest + Testing Library setup in `jest.config.js` and `jest.setup.ts`.
-- Basic page render test in `src/app/page.test.tsx`.
+- Page and component tests in `src/app/page.test.tsx` and `src/components`.
