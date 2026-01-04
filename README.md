@@ -87,7 +87,8 @@ npm run lint
 
 - Workflow: `.github/workflows/deploy.yml` runs on every push to `main`.
 - It installs dependencies, runs lint and tests, builds a static export, and deploys `out/`.
-- Set a repository variable `NEXT_PUBLIC_BASE_PATH` to `/<repo-name>` for project pages.
+- The workflow sets `NEXT_PUBLIC_BASE_PATH` to `/<repo-name>` automatically for project pages.
+- If you use a custom domain or user/org site, override it with a repository variable `NEXT_PUBLIC_BASE_PATH`.
 
 ## Git hooks
 
