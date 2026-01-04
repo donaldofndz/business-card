@@ -14,4 +14,11 @@ describe("ResumeApp", () => {
     fireEvent.click(screen.getByRole("button", { name: /profile/i }));
     expect(screen.getByRole("heading", { name: /about/i })).toBeInTheDocument();
   });
+
+  it("renders the current year in the footer", () => {
+    render(<ResumeApp />);
+
+    const year = new Date().getFullYear();
+    expect(screen.getByText(`© ${year} Alex Morgan.`)).toBeInTheDocument();
+  });
 });

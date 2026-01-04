@@ -90,8 +90,12 @@ const skills = {
 const contactCopy =
   "I'm currently available for freelance projects and consulting. If you're interested in working together, feel free to reach out.";
 
+const presentation =
+  "A product designer with 8 years of experience building accessible, user-centric interfaces for enterprise SaaS applications.Passionate about design systems and simplifying complex workflows.Dedicated to bridging the gap between design and engineering to deliver polished, high - quality products."
+
 export function ResumeApp() {
   const [activeView, setActiveView] = useState("profile");
+  const footerYear = new Date().getFullYear() || 2026;
 
   const content = useMemo(() => {
     if (activeView === "projects") {
@@ -126,10 +130,7 @@ export function ResumeApp() {
       <>
         <Section title="About">
           <p className="text-base md:text-lg leading-relaxed text-zinc-600 dark:text-zinc-300 max-w-2xl">
-            A product designer with 8 years of experience building accessible, user-centric
-            interfaces for enterprise SaaS applications. Passionate about design systems and
-            simplifying complex workflows. Dedicated to bridging the gap between design and
-            engineering to deliver polished, high-quality products.
+            {presentation}
           </p>
         </Section>
         <Section title="Experience" contentClassName="gap-12">
@@ -154,7 +155,7 @@ export function ResumeApp() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-white">
-      <LayoutShell footerText="© 2024 Alex Morgan.">
+      <LayoutShell footerText={`© ${footerYear} Alex Morgan.`}>
         <ResumeHeader name="Alex Morgan" role="Senior Product Designer" />
         <Menu items={menuItems} activeId={activeView} onSelect={setActiveView} />
         <div className="flex flex-col gap-16">{content}</div>
