@@ -31,7 +31,9 @@ export function LanguageSelector({ label, currentLocale, options }: LanguageSele
     }
 
     const nextPath = segments.join("/") || "/";
-    document.cookie = `NEXT_LOCALE=${nextLocale}; path=/`;
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("preferredLocale", nextLocale);
+    }
     router.replace(nextPath);
   };
 

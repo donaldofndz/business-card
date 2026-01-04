@@ -34,7 +34,9 @@ npm run lint
 .
 ├── jest.config.js
 ├── jest.setup.ts
-├── middleware.ts
+├── .github
+│   └── workflows
+│       └── deploy.yml
 ├── src
 │   └── app
 │       ├── [locale]
@@ -58,8 +60,8 @@ npm run lint
 ## Internationalization (i18n)
 
 - Locale routing uses `/en` and `/es` paths with App Router at `src/app/[locale]/page.tsx`.
-- `middleware.ts` detects the browser language from `Accept-Language` and redirects to the best locale.
-- The selected locale is stored in the `NEXT_LOCALE` cookie and applied to the root layout.
+- Browser language detection runs client-side in `src/app/page.tsx` on first load.
+- The selected locale is stored in `localStorage` and used for subsequent visits.
 - Use the language dropdown in the top-right to switch language client-side.
 
 ### Add a new language
@@ -80,3 +82,9 @@ npm run lint
 - Shared UI components in `src/components`.
 - Jest + Testing Library setup in `jest.config.js` and `jest.setup.ts`.
 - Page and component tests in `src/app/page.test.tsx` and `src/components`.
+
+## Deployment (GitHub Pages)
+
+- Workflow: `.github/workflows/deploy.yml` runs on every push to `main`.
+- It installs dependencies, runs lint and tests, builds a static export, and deploys `out/`.
+- Set a repository variable `NEXT_PUBLIC_BASE_PATH` to `/<repo-name>` for project pages.

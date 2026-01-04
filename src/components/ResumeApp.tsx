@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ResumeContent } from "@/content";
 import type { Locale } from "@/i18n/config";
@@ -28,6 +28,12 @@ export function ResumeApp({ content, languageOptions, locale }: ResumeAppProps) 
     "{{year}}",
     String(footerYear)
   );
+
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.documentElement.lang = locale;
+    }
+  }, [locale]);
 
   const menuItems = [
     { id: "profile", label: content.nav.profile },

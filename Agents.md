@@ -25,7 +25,8 @@
 
 # i18n rules
 
-- Use Next.js built-in locale routing and middleware for language detection.
+- Use Next.js built-in locale routing for `/[locale]`.
+- Detect browser language client-side and persist user choice in `localStorage`.
 - All user-facing copy must come from locale files in `src/content/locales/`.
 - Do not hardcode strings in components; update translation files instead.
 
