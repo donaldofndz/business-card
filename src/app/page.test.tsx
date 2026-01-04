@@ -1,11 +1,26 @@
 import { render, screen } from "@testing-library/react";
 
-import Home from "./page";
+import { getLocaleContent } from "@/content";
+import { DEFAULT_LOCALE } from "@/i18n/config";
 
-describe("Home page", () => {
-  it("renders the resume header", () => {
-    render(<Home />);
+import LocalePage from "./[locale]/page";
 
-    expect(screen.getByRole("heading", { name: /alex morgan/i })).toBeInTheDocument();
+jest.mock("next/navigation", () => ({
+  useRouter: () => ({ replace: jest.fn() }),
+  usePathname: () => "/en",
+}));
+
+describe("Locale page", () => {
+  it("renders the localized header", async () => {
+    const content = getLocaleContent(DEFAULT_LOCALE);
+
+    const element = await LocalePage({ params: Promise.resolve({ locale: DEFAULT_LOCALE }) });
+    render(element);
+
+    expect(screen.getByRole("heading", { name: content.header.name })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 2, name: content.header.role })
+    ).toBeInTheDocument();
+    expect(screen.getByRole("combobox")).toHaveValue(DEFAULT_LOCALE);
   });
 });

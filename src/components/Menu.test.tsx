@@ -14,6 +14,7 @@ describe("Menu", () => {
         ]}
         activeId="profile"
         onSelect={handleSelect}
+        ariaLabel="Primary navigation"
       />
     );
 

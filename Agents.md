@@ -23,6 +23,24 @@
 - Every new component or page should have a basic render test.
 - Aim for meaningful coverage of critical UI paths.
 
+# i18n rules
+
+- Use Next.js built-in locale routing and middleware for language detection.
+- All user-facing copy must come from locale files in `src/content/locales/`.
+- Do not hardcode strings in components; update translation files instead.
+
+# Copy management guidelines
+
+- Keep copy centralized in JSON locale files.
+- Avoid logic in content files; they should only contain text and structured data.
+- Update both locales when changing shared copy unless intentionally language-specific.
+
+# UI consistency expectations
+
+- Keep typography, spacing, and color usage consistent with the reference layouts.
+- Ensure new UI elements match existing light/dark styles.
+- Avoid introducing new visual styles without updating the reference-based components.
+
 # Git workflow and commit conventions
 
 - Use short-lived branches per feature or fix.

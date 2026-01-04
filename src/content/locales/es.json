@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "languageName": "🇲🇽"
+  },
+  "languageSelector": {
+    "label": "Idioma"
+  },
+  "header": {
+    "name": "Alex Morgan",
+    "role": "Senior Product Designer"
+  },
+  "nav": {
+    "ariaLabel": "Navegación principal",
+    "profile": "Perfil",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "sections": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "projects": "Proyectos destacados",
+    "writing": "Escritura",
+    "contact": "Ponte en contacto"
+  },
+  "about": "Diseñadora de producto con 8 años de experiencia creando interfaces accesibles y centradas en el usuario para aplicaciones SaaS empresariales. Apasionada por los sistemas de diseño y la simplificación de flujos de trabajo complejos. Comprometida con cerrar la brecha entre diseño e ingeniería para entregar productos pulidos y de alta calidad.",
+  "experience": [
+    {
+      "period": "2021 — Actualidad",
+      "title": "Senior Product Designer",
+      "subtitle": "TechFlow",
+      "description": "Lideré el rediseño del panel de analíticas principal, aumentando el engagement en un 40%. Establecí y mantuve el sistema de diseño de la compañía, asegurando consistencia en varias líneas de producto. Mentoricé a diseñadores junior y realicé críticas de diseño semanales."
+    },
+    {
+      "period": "2018 — 2021",
+      "title": "Product Designer",
+      "subtitle": "Creative Solutions",
+      "description": "Colaboré con ingeniería para lanzar 5 funcionalidades clave en la app móvil. Realicé investigación de usuarios y pruebas de usabilidad para validar decisiones de diseño. Diseñé piezas de marketing y landing pages para lanzamientos logrando un 15% de mejora en conversión."
+    },
+    {
+      "period": "2015 — 2018",
+      "title": "Junior Designer",
+      "subtitle": "StartUp Inc.",
+      "description": "Apoyé el diseño de la interfaz del MVP inicial. Creé wireframes, prototipos y mockups de alta fidelidad. Trabajé con el fundador para definir la identidad de marca y el lenguaje visual."
+    }
+  ],
+  "education": [
+    {
+      "period": "2011 — 2015",
+      "title": "BFA en Diseño de Interacción",
+      "subtitle": "California College of the Arts"
+    }
+  ],
+  "skills": {
+    "designTitle": "Diseño e investigación",
+    "designItems": ["Diseño de producto", "Pruebas con usuarios", "Prototipado", "Sistemas de diseño", "Wireframing"],
+    "toolsTitle": "Técnico y herramientas",
+    "toolsItems": ["Figma", "HTML/CSS", "Tailwind", "Git", "Notion"]
+  },
+  "projects": [
+    {
+      "period": "2023",
+      "title": "Rediseño de e-commerce",
+      "subtitle": "Caso de estudio",
+      "description": "Reestructuración completa del flujo de checkout para un retailer de moda, logrando una reducción del 25% en abandono de carrito. Implementé un nuevo sistema de diseño para escalar."
+    },
+    {
+      "period": "2022",
+      "title": "MVP de app financiera",
+      "subtitle": "Aplicación móvil",
+      "description": "Diseñé la experiencia 0 a 1 para un tracker de finanzas personales. Enfocado en visualización de datos y categorización intuitiva de gastos."
+    }
+  ],
+  "posts": [
+    {
+      "title": "Construyendo sistemas de diseño accesibles",
+      "date": "12 de abril de 2024"
+    },
+    {
+      "title": "El futuro del diseño de producto en IA",
+      "date": "28 de febrero de 2024"
+    },
+    {
+      "title": "Por qué importa el minimalismo",
+      "date": "15 de enero de 2024"
+    }
+  ],
+  "contact": {
+    "message": "Actualmente estoy disponible para proyectos freelance y consultoría. Si te interesa trabajar juntos, no dudes en escribir.",
+    "email": "alex@example.com"
+  },
+  "footer": {
+    "copyrightTemplate": "© {{year}} Alex Morgan."
+  }
+}

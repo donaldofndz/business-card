@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "languageName": "🇺🇸"
+  },
+  "languageSelector": {
+    "label": "Language"
+  },
+  "header": {
+    "name": "Alex Morgan",
+    "role": "Senior Product Designer"
+  },
+  "nav": {
+    "ariaLabel": "Primary navigation",
+    "profile": "Profile",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Selected Projects",
+    "writing": "Writing",
+    "contact": "Get in Touch"
+  },
+  "about": "A product designer with 8 years of experience building accessible, user-centric interfaces for enterprise SaaS applications. Passionate about design systems and simplifying complex workflows. Dedicated to bridging the gap between design and engineering to deliver polished, high-quality products.",
+  "experience": [
+    {
+      "period": "2021 — Present",
+      "title": "Senior Product Designer",
+      "subtitle": "TechFlow",
+      "description": "Led the redesign of the core analytics dashboard, increasing user engagement by 40%. Established and maintained the company-wide design system, ensuring consistency across product lines. Mentored junior designers and conducted weekly design critiques."
+    },
+    {
+      "period": "2018 — 2021",
+      "title": "Product Designer",
+      "subtitle": "Creative Solutions",
+      "description": "Collaborated with engineering teams to ship 5 major features for the mobile app. Conducted user research and usability testing to validate design decisions. Designed marketing assets and landing pages for product launches resulting in a 15% conversion lift."
+    },
+    {
+      "period": "2015 — 2018",
+      "title": "Junior Designer",
+      "subtitle": "StartUp Inc.",
+      "description": "Assisted in the UI design of the initial MVP launch. Created wireframes, prototypes, and high-fidelity mockups. Worked closely with the founder to define the brand identity and visual language."
+    }
+  ],
+  "education": [
+    {
+      "period": "2011 — 2015",
+      "title": "BFA in Interaction Design",
+      "subtitle": "California College of the Arts"
+    }
+  ],
+  "skills": {
+    "designTitle": "Design & Research",
+    "designItems": ["Product Design", "User Testing", "Prototyping", "Design Systems", "Wireframing"],
+    "toolsTitle": "Technical & Tools",
+    "toolsItems": ["Figma", "HTML/CSS", "Tailwind", "Git", "Notion"]
+  },
+  "projects": [
+    {
+      "period": "2023",
+      "title": "E-Commerce Redesign",
+      "subtitle": "Case Study",
+      "description": "Complete overhaul of the checkout flow for a major fashion retailer, resulting in a 25% reduction in cart abandonment. Implemented a new design system for scalability."
+    },
+    {
+      "period": "2022",
+      "title": "Finance App MVP",
+      "subtitle": "Mobile Application",
+      "description": "Designed the 0-to-1 experience for a personal finance tracker. Focused on data visualization and intuitive categorization of expenses."
+    }
+  ],
+  "posts": [
+    {
+      "title": "Building Accessible Design Systems",
+      "date": "April 12, 2024"
+    },
+    {
+      "title": "The Future of Product Design in AI",
+      "date": "February 28, 2024"
+    },
+    {
+      "title": "Why Minimalism Matters",
+      "date": "January 15, 2024"
+    }
+  ],
+  "contact": {
+    "message": "I'm currently available for freelance projects and consulting. If you're interested in working together, feel free to reach out.",
+    "email": "alex@example.com"
+  },
+  "footer": {
+    "copyrightTemplate": "© {{year}} Alex Morgan."
+  }
+}

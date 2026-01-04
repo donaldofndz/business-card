@@ -1,5 +1,7 @@
-import { ResumeApp } from "@/components/ResumeApp";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return <ResumeApp />;
+import { DEFAULT_LOCALE } from "@/i18n/config";
+
+export default function Page() {
+  redirect(`/${DEFAULT_LOCALE}`);
 }

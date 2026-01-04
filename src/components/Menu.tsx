@@ -7,11 +7,15 @@ interface MenuProps {
   items: MenuItem[];
   activeId: string;
   onSelect: (id: string) => void;
+  ariaLabel: string;
 }
 
-export function Menu({ items, activeId, onSelect }: MenuProps) {
+export function Menu({ items, activeId, onSelect, ariaLabel }: MenuProps) {
   return (
-    <nav className="flex gap-8 border-b border-zinc-100 dark:border-zinc-800 overflow-x-auto no-scrollbar" aria-label="Primary">
+    <nav
+      className="flex gap-8 border-b border-zinc-100 dark:border-zinc-800 overflow-x-auto no-scrollbar"
+      aria-label={ariaLabel}
+    >
       {items.map((item) => {
         const isActive = item.id === activeId;
         return (
