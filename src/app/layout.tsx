@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import { ThemeSync } from "@/components/ThemeSync";
+import enContent from "@/content/locales/en.json";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Morgan | Minimal Resume",
-  description: "A minimalist, professional resume layout.",
+  title: `${enContent.header.name} | ${enContent.header.role}`,
+  description: enContent.about,
 };
 
 export default function RootLayout({

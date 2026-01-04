@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Fail commit if the production build fails.
+
+npm run build
