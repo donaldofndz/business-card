@@ -74,12 +74,18 @@ export function ResumeApp({ content, languageOptions, locale }: ResumeAppProps) 
         </Section>
         <Section title={content.sections.experience} contentClassName="gap-12">
           {content.experience.map((item) => (
-            <TimelineItem key={item.title} {...item} />
+            <TimelineItem
+              key={`${item.period}-${item.title}-${item.subtitle}`}
+              {...item}
+            />
           ))}
         </Section>
         <Section title={content.sections.education} contentClassName="gap-8">
           {content.education.map((item) => (
-            <TimelineItem key={item.title} {...item} />
+            <TimelineItem
+              key={`${item.period}-${item.title}-${item.subtitle}`}
+              {...item}
+            />
           ))}
         </Section>
         <Section title={content.sections.skills}>
