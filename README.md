@@ -47,6 +47,7 @@ npm run lint
 ## Features and changes
 
 - SPA-style resume views with menu navigation in `src/components/ResumeApp.tsx`.
+- Light and dark mode support synced to system preference via `src/components/ThemeSync.tsx`.
 - Shared UI components in `src/components`.
 - Jest + Testing Library setup in `jest.config.js` and `jest.setup.ts`.
 - Page and component tests in `src/app/page.test.tsx` and `src/components`.

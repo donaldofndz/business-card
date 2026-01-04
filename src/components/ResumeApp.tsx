@@ -125,7 +125,7 @@ export function ResumeApp() {
     return (
       <>
         <Section title="About">
-          <p className="text-base md:text-lg leading-relaxed text-zinc-600 max-w-2xl">
+          <p className="text-base md:text-lg leading-relaxed text-zinc-600 dark:text-zinc-300 max-w-2xl">
             A product designer with 8 years of experience building accessible, user-centric
             interfaces for enterprise SaaS applications. Passionate about design systems and
             simplifying complex workflows. Dedicated to bridging the gap between design and
@@ -153,7 +153,7 @@ export function ResumeApp() {
   }, [activeView]);
 
   return (
-    <div className="min-h-screen bg-white text-zinc-900">
+    <div className="min-h-screen bg-white text-zinc-900 dark:bg-[#0a0a0a] dark:text-white">
       <LayoutShell footerText="© 2024 Alex Morgan.">
         <ResumeHeader name="Alex Morgan" role="Senior Product Designer" />
         <Menu items={menuItems} activeId={activeView} onSelect={setActiveView} />

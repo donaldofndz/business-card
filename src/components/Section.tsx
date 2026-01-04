@@ -11,7 +11,7 @@ export function Section({ title, children, contentClassName }: SectionProps) {
 
   return (
     <section>
-      <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 mb-6">
+      <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400 dark:text-zinc-500 mb-6">
         {title}
       </h3>
       <div className={contentClasses}>{children}</div>
