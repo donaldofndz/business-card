@@ -37,8 +37,8 @@ export function ResumeApp({ content, languageOptions, locale }: ResumeAppProps) 
 
   const menuItems = [
     { id: "profile", label: content.nav.profile },
-    { id: "projects", label: content.nav.projects },
-    { id: "blog", label: content.nav.blog },
+    // { id: "projects", label: content.nav.projects },
+    // { id: "blog", label: content.nav.blog },
     { id: "contact", label: content.nav.contact },
   ];
 
