@@ -66,7 +66,12 @@ export function ResumeApp({ content, languageOptions, locale }: ResumeAppProps) 
     if (activeView === "contact") {
       return (
         <Section title={content.sections.contact}>
-          <ContactCard message={content.contact.message} email={content.contact.email} />
+          <ContactCard
+            message={content.contact.message}
+            email={content.contact.email}
+            linkedInLabel={content.contact.linkedInLabel}
+            linkedInUrl={content.contact.linkedInUrl}
+          />
         </Section>
       );
     }

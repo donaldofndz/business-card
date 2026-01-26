@@ -96,7 +96,9 @@
   "posts": [],
   "contact": {
     "message": "Abierto a conversaciones sobre liderazgo técnico, fintech y mentoría en ingeniería. No dudes en contactarme.",
-    "email": "donaldo.fndz@gmail.com"
+    "email": "donaldo.fndz@gmail.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedInUrl": "https://www.linkedin.com/in/donaldo-fernandez/"
   },
   "footer": {
     "copyrightTemplate": "© {{year}} José Donaldo Fernández Montenegro."

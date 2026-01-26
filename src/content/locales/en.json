@@ -96,7 +96,9 @@
   "posts": [],
   "contact": {
     "message": "Open to conversations about engineering leadership, fintech, and technical mentoring. Feel free to reach out.",
-    "email": "donaldo.fndz@gmail.com"
+    "email": "donaldo.fndz@gmail.com",
+    "linkedInLabel": "LinkedIn",
+    "linkedInUrl": "https://www.linkedin.com/in/donaldo-fernandez/"
   },
   "footer": {
     "copyrightTemplate": "© {{year}} José Donaldo Fernández Montenegro."

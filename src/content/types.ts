@@ -51,6 +51,8 @@ export interface ResumeContent {
   contact: {
     message: string;
     email: string;
+    linkedInLabel: string;
+    linkedInUrl: string;
   };
   footer: {
     copyrightTemplate: string;
