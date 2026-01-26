@@ -73,7 +73,6 @@
   "skills": {
     "designTitle": "Ingeniería y Desarrollo",
     "designItems": [
-      "Desarrollo Web",
       "Ingeniería Full-Stack",
       "Arquitectura de Sistemas",
       "Liderazgo Técnico",
@@ -86,10 +85,11 @@
       "Node.js",
       "Next.js",
       "React",
+      "React Native",
       "Python",
       "Java",
-      "MySQL",
-      "Docker"
+      "CI/CD",
+      "Kubernetes"
     ]
   },
   "projects": [],
