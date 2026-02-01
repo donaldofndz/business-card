@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: enContent.about,
   metadataBase: new URL("https://donaldofndz.com"),
   icons: {
-    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E",
+    icon: "/icon.svg",
   },
   openGraph: {
     title: `${enContent.header.name} | ${enContent.header.role}`,
