@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 
 import { getLocaleContent, languageOptions } from "@/content";
@@ -8,29 +8,31 @@ import { DEFAULT_LOCALE, isLocale, SUPPORTED_LOCALES, type Locale } from "@/i18n
 
 export default function Page() {
   const router = useRouter();
-  const [displayLocale, setDisplayLocale] = useState<Locale>(DEFAULT_LOCALE);
+  const displayLocale = useMemo<Locale>(() => {
+    if (typeof window === "undefined") {
+      return DEFAULT_LOCALE;
+    }
 
-  useEffect(() => {
-    const stored =
-      typeof window !== "undefined" ? window.localStorage.getItem("preferredLocale") : null;
-    const storedLocale = stored && isLocale(stored) ? stored : null;
+    const stored = window.localStorage.getItem("preferredLocale");
+    if (stored && isLocale(stored)) {
+      return stored;
+    }
 
-    const browserLanguage =
-      typeof navigator !== "undefined" ? navigator.language.toLowerCase() : DEFAULT_LOCALE;
-
+    const browserLanguage = navigator.language.toLowerCase();
     const matched = SUPPORTED_LOCALES.find(
       (locale) => browserLanguage === locale || browserLanguage.startsWith(`${locale}-`)
     );
 
-    const targetLocale = storedLocale ?? matched ?? DEFAULT_LOCALE;
-    setDisplayLocale(targetLocale);
+    return matched ?? DEFAULT_LOCALE;
+  }, []);
 
+  useEffect(() => {
     if (typeof window !== "undefined") {
-      window.localStorage.setItem("preferredLocale", targetLocale);
+      window.localStorage.setItem("preferredLocale", displayLocale);
     }
 
-    router.replace(`/${targetLocale}`);
-  }, [router]);
+    router.replace(`/${displayLocale}`);
+  }, [displayLocale, router]);
 
   const content = useMemo(() => getLocaleContent(displayLocale), [displayLocale]);
 
