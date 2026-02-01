@@ -13,8 +13,27 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: `${enContent.header.name} | ${enContent.header.role}`,
   description: enContent.about,
+  metadataBase: new URL("https://donaldofndz.com"),
   icons: {
     icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E",
+  },
+  openGraph: {
+    title: `${enContent.header.name} | ${enContent.header.role}`,
+    description: enContent.about,
+    images: [
+      {
+        url: "/og.svg",
+        width: 1200,
+        height: 630,
+        alt: "Rocket icon",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${enContent.header.name} | ${enContent.header.role}`,
+    description: enContent.about,
+    images: ["/og.svg"],
   },
 };
 
