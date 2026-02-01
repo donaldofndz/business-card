@@ -94,6 +94,10 @@
   },
   "projects": [],
   "posts": [],
+  "root": {
+    "title": "Redirecting to your language",
+    "description": "If you are not redirected automatically, choose a language below."
+  },
   "contact": {
     "message": "Open to conversations about engineering leadership, fintech, and technical mentoring. Feel free to reach out.",
     "email": "donaldo.fndz@gmail.com",

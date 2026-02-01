@@ -48,6 +48,10 @@ export interface ResumeContent {
   };
   projects: TimelineEntry[];
   posts: BlogPost[];
+  root: {
+    title: string;
+    description: string;
+  };
   contact: {
     message: string;
     email: string;
